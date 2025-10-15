@@ -1,0 +1,136 @@
+.educationIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.experienceIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2zM4 6h16v10H4z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.certificateIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M10.586 2.1a2 2 0 0 1 2.7-.116l.128.117L15.314 4H18a2 2 0 0 1 1.994 1.85L20 6v2.686l1.9 1.9a2 2 0 0 1 .116 2.701l-.117.127l-1.9 1.9V18a2 2 0 0 1-1.85 1.995L18 20h-2.685l-1.9 1.9a2 2 0 0 1-2.701.116l-.127-.116l-1.9-1.9H6a2 2 0 0 1-1.995-1.85L4 18v-2.686l-1.9-1.9a2 2 0 0 1-.116-2.701l.116-.127l1.9-1.9V6a2 2 0 0 1 1.85-1.994L6 4h2.686zm4.493 6.883l-4.244 4.244l-1.768-1.768a1 1 0 0 0-1.414 1.415l2.404 2.404a1.1 1.1 0 0 0 1.556 0l4.88-4.881a1 1 0 0 0-1.414-1.414'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.educationIcon, 
+.experienceIcon, 
+.certificateIcon {
+    color: var(--color-primary);
+}
+
+.educationContainer .header-section,
+.experienceContainer .header-section,
+.certificationsContainer .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-details h2{
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.experience-details h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--color-dark);
+}  
+
+.experience-details p{
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 15px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-light-gray);
+}
+
+.experience-details{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-family: 'Instrument sans', sans-serif;
+    color: var(--color-dark);
+    line-height: 1.5;
+    max-width: 1100px; /* allow wider cards */
+    font-size: 18px;
+    gap: 50px;
+    margin: 20px;
+    flex-wrap: wrap; /* wrap on smaller screens */
+    justify-content: center; /* keep nicely centered */
+
+}
+
+.experience-container h1{
+    font-size: 45px;
+    margin: 50px 0 20px 0;
+}
+
+.experience-container .My{
+    color: var(--color-primary);
+}
+
+.experience-container .Experience{
+    color: var(--color-dark);
+}
+
+
+.educationContainer,
+.experienceContainer, 
+.certificationsContainer {
+  border: 1px solid var(--color-accent);
+  border-radius: 30px;
+  box-shadow: -5px -5px 3px var(--color-primary);
+  padding: 20px 50px;
+  /* wider, responsive card sizing */
+  flex: 1 1 360px; /* preferred width ~360px, can shrink/grow */
+  min-width: 320px; /* don't get too narrow */
+}
+
+/* remove bullets and tighten spacing inside lists */
+.experience-details ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.experience-details li + li {
+  margin-top: 12px;
+}
+
