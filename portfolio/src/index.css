@@ -1,0 +1,17 @@
+:root {
+  /* Color Palette */
+  --color-primary: hsl(132, 18%, 33%);
+  --color-secondary: hsl(114, 16%, 60%);
+  --color-accent: hsl(91, 23%, 75%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 8%);
+  --color-dark: hsl(0, 0%, 16%);
+  --color-gray: hsl(0, 0%, 32%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

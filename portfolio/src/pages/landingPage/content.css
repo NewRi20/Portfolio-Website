@@ -1,0 +1,56 @@
+.contentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px 35px;
+    font-family: 'instrument sans', sans-serif;
+}
+
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 700px;
+}
+
+.infoContainer h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.infoContainer .firstName{
+    color: var(--color-primary);
+}
+
+.infoContainer .lastName{
+    color: var(--color-dark);
+}
+
+
+.infoContainer h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.infoContainer p{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.mePic{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
