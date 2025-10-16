@@ -211,3 +211,128 @@
     margin-bottom: 30px;
     font-size: 18px;
 }
+
+/* ============ ENHANCED RESPONSIVE DESIGN ============ */
+
+/* Tablet styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .section-title {
+        font-size: 38px;
+        margin: 40px 0 15px 0;
+    }
+
+    .section-description {
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding: 0 20px;
+    }
+
+    .skills-track {
+        gap: 15px;
+        animation-duration: 35s;
+    }
+
+    .skills-track .item {
+        flex: 0 0 200px;
+        height: 130px;
+        padding: 14px 8px;
+    }
+
+    .item-details h4,
+    .item-details p {
+        font-size: 0.95rem;
+    }
+
+    .githubIcon, .vscodeIcon, .mysqlIcon, .pythonIcon,
+    .cPlusPlusIcon, .javaIcon, .htmlIcon, .cssIcon,
+    .javascriptIcon, .reactIcon, .figmaIcon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 32px;
+        margin: 30px 0 15px 0;
+    }
+
+    .section-description {
+        font-size: 15px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .skills-marquee {
+        margin: 15px 0;
+    }
+
+    .skills-track {
+        gap: 12px;
+        animation-duration: 40s;
+    }
+
+    .skills-track .item {
+        flex: 0 0 180px;
+        height: 130px;
+        padding: 12px 6px;
+        border-radius: 15px;
+    }
+
+    .item-details h4,
+    .item-details p {
+        font-size: 0.9rem;
+        margin: 8px 0 3px 0;
+    }
+
+    .githubIcon, .vscodeIcon, .mysqlIcon, .pythonIcon,
+    .cPlusPlusIcon, .javaIcon, .htmlIcon, .cssIcon,
+    .javascriptIcon, .reactIcon, .figmaIcon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+        margin: 20px 0 10px 0;
+    }
+
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .skills-marquee {
+        margin: 10px 0;
+    }
+
+    .skills-track {
+        gap: 10px;
+        animation-duration: 45s;
+    }
+
+    .skills-track .item {
+        flex: 0 0 160px;
+        height: 120px;
+        padding: 10px 5px;
+        border-radius: 12px;
+    }
+
+    .item-details h4,
+    .item-details p {
+        font-size: 0.85rem;
+        margin: 6px 0 2px 0;
+    }
+
+    .githubIcon, .vscodeIcon, .mysqlIcon, .pythonIcon,
+    .cPlusPlusIcon, .javaIcon, .htmlIcon, .cssIcon,
+    .javascriptIcon, .reactIcon, .figmaIcon {
+        width: 24px;
+        height: 24px;
+    }
+}

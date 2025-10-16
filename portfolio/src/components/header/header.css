@@ -13,8 +13,12 @@
   margin-right: 20px;
 }
 
+.header a{
+  text-decoration: none;
+  color: inherit;
+}
 
-.linkedinIcon {
+.header .linkedinIcon {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -37,6 +41,12 @@
   align-items: center;
   padding: 20px 40px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header h2{
@@ -49,6 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-grow: 1;
+  max-width: 40%;
   gap: 10px;
   height: 30px;
   margin: 0;
@@ -99,4 +111,128 @@
 .githubIcon:active,
 .linkedinIcon:active {
   color: var(--color-primary);
+}
+
+/* Active section state - persistent primary color */
+.about.active,
+.skills.active,
+.projects.active,
+.contacts.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+
+
+
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablet styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .navLinks {
+    max-width: 50%;
+    gap: 8px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contacts {
+    width: 70px;
+    font-size: 14px;
+  }
+
+  .header .githubIcon,
+  .header .linkedinIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .line {
+    margin-right: 15px;
+  }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .navLinks {
+    max-width: 60%;
+    gap: 5px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contacts {
+    width: 60px;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  .line {
+    margin-right: 10px;
+    height: 20px;
+  }
+
+  .header .githubIcon,
+  .header .linkedinIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header.githubIcon {
+    margin-right: 10px;
+  }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header h2 {
+    font-size: 18px;
+  }
+
+  .navLinks {
+    max-width: 70%;
+    gap: 3px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contacts {
+    width: 50px;
+    font-size: 11px;
+    margin-right: 3px;
+  }
+
+  .line {
+    display: none; /* Hide the vertical line on very small screens */
+  }
+
+  .header .githubIcon,
+  .header .linkedinIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header.githubIcon {
+    margin-right: 8px;
+  }
 }
