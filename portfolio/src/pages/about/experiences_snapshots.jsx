@@ -29,10 +29,7 @@ function ExperiencesSnapshots() {
             { id: 2, src: HawkathonEvent, alt: 'Hawkathon Event' },
         ],
         Presentation: [
-            // { id: 1, src: '/path/to/pres1.jpg', alt: 'Presentation 1' },
-            // { id: 2, src: '/path/to/pres2.jpg', alt: 'Presentation 2' },
-            // { id: 3, src: '/path/to/pres3.jpg', alt: 'Presentation 3' },
-            // { id: 4, src: '/path/to/pres4.jpg', alt: 'Presentation 4' },
+            // none
         ]
     };
 
