@@ -7,6 +7,7 @@ import CS50P from '../../assets/certification_assets/CS50P_Certificate.png';
 import CS50x from '../../assets/certification_assets/CS50x_certificate.png';
 import Hawkathon from '../../assets/certification_assets/Hawkathon_certificate.jpg';
 import SQL from '../../assets/certification_assets/CS50SQL_CERTIFICATE.png';
+import Meralco from '../../assets/certification_assets/Meralco_Certificate.jpg';
 
 
 // Events
@@ -27,6 +28,7 @@ function ExperiencesSnapshots() {
             { id: 3, src: CS50x, alt: 'CS50x Certificate' },
             { id: 4, src: Hawkathon, alt: 'Hawkathon Certificate' },
             { id: 5, src: SQL, alt: 'SQL Certificate' },
+            { id: 6, src: Meralco, alt: 'Meralco Certificate' },
         ],
         Events: [
             { id: 1, src: TonEvent, alt: 'Ton Event' },
