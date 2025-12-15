@@ -6,6 +6,7 @@ import ERS from '../../assets/project_assets/Ers_LoginPage.png';
 import GDG from '../../assets/project_assets/GDG-Landing.png';
 import Invex from '../../assets/project_assets/Invex-Landing.png';
 import SFC from '../../assets/project_assets/syncFitConnect.png';
+import Voltizen from '../../assets/project_assets/Voltizen-Login.png';
 
 function Projects() {
     const projects = [
@@ -13,6 +14,7 @@ function Projects() {
         { id: 2, src: GDG, desc: 'Google Developer Groups on Campus - TUP Manila Landing Page', link: 'https://gdgoctupm.com/'},
         { id: 3, src: Invex, desc: 'Inventory & Pricing Management System for General Merchandise Store', link: 'https://inv3x.vercel.app/' },
         { id: 4, src: SFC, desc: 'SyncFit Connect - a smart fitness platform that bridges trainees and trainers in one seamless experience.' },
+        { id: 5, src: Voltizen, desc: 'Uniting Community & Consumption', link: 'https://voltizen.vercel.app/' },
 
     ];
 
