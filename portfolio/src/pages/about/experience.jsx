@@ -54,6 +54,14 @@ function Experience() {
                             <h2>Certifications</h2>
                         </div>
                         <ul>
+                            <li>
+                                <h5>Meralco Power Academy: IDOL Hackathon</h5>
+                                <p>Participant</p>
+                            </li>
+                            <li>
+                                <h5>HarvardX: CS50 SQL</h5>
+                                <p>CS50's Introduction to Database with SQL</p>
+                            </li>
                             <li>    
                                 <h5>HarvardX: CS50P</h5>
                                 <p>CS50's Introduction to Programming with Python</p>
@@ -70,6 +78,7 @@ function Experience() {
                                 <h5>UI/UX Hawk-A-Thon: Designing the Future</h5>
                                 <p>Project Manager</p>
                             </li>
+
                         </ul>
                     </div>
                 </div>
