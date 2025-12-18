@@ -13,6 +13,9 @@ import Meralco from '../../assets/certification_assets/Meralco_Certificate.jpg';
 // Events
 import TonEvent from './Events_assets/Ton.jpg';
 import HawkathonEvent from './Events_assets/hawkathon.jpg';
+import MeralcoHackathon from './Events_assets/MeralcoHackathon.jpg';
+import Boltez5 from './Events_assets/TeamBoltez5.jpg';
+// import sampleImage from './Events_assets/sample.jpg';
 
 
 
@@ -33,6 +36,8 @@ function ExperiencesSnapshots() {
         Events: [
             { id: 1, src: TonEvent, alt: 'Ton Event' },
             { id: 2, src: HawkathonEvent, alt: 'Hawkathon Event' },
+            { id: 3, src: MeralcoHackathon, alt: 'Meralco Hackathon' },
+            { id: 4, src: Boltez5, alt: 'Team Boltez5' },
         ],
         Presentation: [
             // none
@@ -41,13 +46,13 @@ function ExperiencesSnapshots() {
 
     const handleCategoryClick = (category) => {
         setActiveCategory(category);
-        setVisibleCount(4); // Reset to default when category changes
+        setVisibleCount(4); 
     };
 
     const currentImages = imageData[activeCategory].slice(0, visibleCount);
 
     const handleViewMore = () => {
-        setVisibleCount(prevCount => prevCount + 4); // Show 4 more images
+        setVisibleCount(prevCount => prevCount + 4); 
     };
 
     return(

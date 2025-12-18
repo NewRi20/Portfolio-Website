@@ -34,15 +34,19 @@ function Experience() {
                         </div>
                         <ul>
                             <li>
+                                <h5>Meralco Power Academy: IDOL Hackathon</h5>
+                                <p>Participant | November 2025</p>
+                            </li>
+                            <li>
                                 <h5>Google Developer Groups on Campus</h5>
                                 <p>Frontend Development Lead | September 2025 - Present</p>
                             </li>
                             <li>
-                                <h5>2025 UI/UX Hawk-A-Thon Participant</h5>
+                                <h5>UI/UX Hawk-A-Thon</h5>
                                 <p>Project Manager | March 2025</p>
                             </li>
                             <li>
-                                <h5>2024 Hackers League Hackathon</h5>
+                                <h5>Hackers League Hackathon</h5>
                                 <p>Developer | November 2024</p>
                             </li>
                         </ul>
