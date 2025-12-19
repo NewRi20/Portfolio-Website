@@ -15,15 +15,15 @@ import TonEvent from './Events_assets/Ton.jpg';
 import HawkathonEvent from './Events_assets/hawkathon.jpg';
 import MeralcoHackathon from './Events_assets/MeralcoHackathon.jpg';
 import Boltez5 from './Events_assets/TeamBoltez5.jpg';
-// import sampleImage from './Events_assets/sample.jpg';
+
 
 
 
 function ExperiencesSnapshots() { 
     const [activeCategory, setActiveCategory] = useState('Certifications');
-    const [visibleCount, setVisibleCount] = useState(4); // Initial limit
+    const [visibleCount, setVisibleCount] = useState(4); 
 
-    // Sample image data - replace paths with your actual images
+
     const imageData = {
         Certifications: [
             { id: 1, src: Ton, alt: 'TON Certificate' },

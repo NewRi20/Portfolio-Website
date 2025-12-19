@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './Projects.css';
 
 // Project Images
@@ -8,6 +9,9 @@ import SFC from '../../assets/project_assets/syncFitConnect.png';
 import Voltizen from '../../assets/project_assets/Voltizen-Login.png';
 
 function Projects() {
+    const [projectModal, setProjectModal] = useState(false);
+    const [selectedProject, setSelectedProject] = useState({});
+
     const projects = [
         { id: 1, src: ERS, desc: 'Modernization and Security Enhancement of the Technological University of the Philippines Enrollment and Registration System (TUP-ERS) Website', link: 'https://tup-ers-enhancement.vercel.app/' },
         { id: 2, src: GDG, desc: 'Google Developer Groups on Campus - TUP Manila Landing Page', link: 'https://gdgoctupm.com/'},
@@ -22,6 +26,18 @@ function Projects() {
         }
     };
 
+    function handleProjectModal(project) {
+        console.log(project);
+        setSelectedProject(project);
+        console.log(selectedProject);
+        setProjectModal(true);
+    }
+
+    function handleCloseModal() {
+        setProjectModal(false);
+        setSelectedProject(null);
+    }
+
     return(
         <>
             <h2 className="project-title">
@@ -33,13 +49,26 @@ function Projects() {
             </p>
 
             <div className="project-grid">
-                    {projects.map((project) => (
-                        <div key={project.id} className="project-card" role='button' onClick={() => {if (project.link) goToLink(project.link)}}>
-                            <img src={project.src}/>
-                            <p className="project-desc">{project.desc}</p>
-                        </div>
-                    ))}
+                {projects.map((project) => (
+                    <div key={project.id} className="project-card" role='button' onClick={() => handleProjectModal(project)}>
+                        <img src={project.src}/>
+                        <p className="project-desc">{project.desc}</p>
+                    </div>
+                ))}
             </div>
+
+            {projectModal && (
+                <div className="project-modal" onClick={handleCloseModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <span className="close-button" onClick={handleCloseModal}>&times;</span>
+                        <img src={selectedProject.src} alt="Project Preview" className="modal-image" />
+                        <p className="modal-description">{selectedProject.desc}</p>
+                        {selectedProject.link && (
+                            <button className="modal-button" onClick={() => goToLink(selectedProject.link)}>Visit Project</button>
+                        )}
+                    </div>
+                </div>
+            )}
         </>
     );
 }
