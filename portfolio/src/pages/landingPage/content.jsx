@@ -1,7 +1,19 @@
+import { useState } from 'react';
 import './content.css';
+import About from "../about/about"
 import meImage from './me_cropped.JPG';
 
-function Content() {        
+function Content() {
+    const [showAboutMeModal, setShowAboutMeModal] = useState(false);
+
+    function handleAboutClick() {
+        setShowAboutMeModal(true);
+    }
+
+    function handleCloseModal() {
+        setShowAboutMeModal(false);
+    }
+
     return (
         <>
            <div className='contentContainer'>
@@ -22,6 +34,19 @@ function Content() {
                     <img src={meImage} alt='IrwenFronda' className='mePic' />
                 </div>
            </div>
+           <button onClick={handleAboutClick} className='aboutMeButton'>
+                About Me
+           </button>
+        
+
+           {showAboutMeModal && (
+                <div className="about-modal-overlay" onClick={handleCloseModal}>
+                    <div className="about-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="about-modal-close-button" onClick={handleCloseModal}>&times;</button>
+                        <About />
+                    </div>
+                </div>
+            )}
         </>
     );
 }
