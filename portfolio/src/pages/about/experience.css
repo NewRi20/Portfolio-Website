@@ -133,6 +133,11 @@
   margin-top: 12px;
 }
 
+
+.education-item{
+    cursor: pointer;
+}
+
 /* ============ RESPONSIVE DESIGN ============ */
 
 /* Tablet styles (max-width: 1024px) */
