@@ -136,6 +136,14 @@
 
 .education-item{
     cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.education-item:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    background-color: var(--color-accent);
 }
 
 /* ============ RESPONSIVE DESIGN ============ */
