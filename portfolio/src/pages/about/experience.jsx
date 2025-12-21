@@ -1,6 +1,25 @@
 import './experience.css';
 
-function Experience() { 
+function Experience() {
+    const educationList = [
+        {
+            institution: "Valley High Academy",
+            period: "2021 - 2023",
+            link: "https://valleyhighacademy.edu.ph/"
+        },
+        {
+            institution: "Technological University of the Philippines",
+            period: "2023 - Present",
+            link: "https://www.tup.edu.ph/"
+        }
+    ];
+
+    const goToLink = (url) => {
+        window.open(url, '_blank');
+    }
+
+
+    
     return(
         <>
             <div className="experience-container">
@@ -15,16 +34,12 @@ function Experience() {
                             <span className="educationIcon"></span>
                             <h2>Education</h2>
                         </div>
-                        <ul>
-                            <li>
-                                <h5>Valley High Academy</h5>
-                                <p>2021 - 2023</p>
-                            </li>
-                            <li>
-                                <h5>Technological University of the Philippines</h5>
-                                <p>2023 - Present</p>
-                            </li>
-                        </ul>
+                        {educationList.map((edu, index) => (
+                            <div key={index} className='education-item' role='button' onClick={() => goToLink(edu.link)}>
+                                <h5>{edu.institution}</h5>
+                                <p>{edu.period}</p>
+                            </div>
+                        ))}
                     </div>
 
                     <div className='experienceContainer'>
