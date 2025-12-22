@@ -14,6 +14,29 @@ function Experience() {
         }
     ];
 
+    const experienceList = [
+        {
+            role: "Participant",
+            event: "Meralco Power Academy: IDOL Hackathon",
+            date: "November 2025"
+        },
+        {
+            role: "Frontend Development Lead",
+            event: "Google Developer Groups on Campus",
+            date: "September 2025 - Present"
+        },
+        {
+            role: "Project Manager",
+            event: "UI/UX Hawk-A-Thon",
+            date: "March 2025"
+        },
+        {
+            role: "Developer",
+            event: "Hackers League Hackathon",
+            date: "November 2024"
+        }
+    ];  
+
     const goToLink = (url) => {
         window.open(url, '_blank');
     }
@@ -47,24 +70,12 @@ function Experience() {
                             <span className="experienceIcon"></span>
                             <h2>Experience</h2>
                         </div>
-                        <ul>
-                            <li>
-                                <h5>Meralco Power Academy: IDOL Hackathon</h5>
-                                <p>Participant | November 2025</p>
-                            </li>
-                            <li>
-                                <h5>Google Developer Groups on Campus</h5>
-                                <p>Frontend Development Lead | September 2025 - Present</p>
-                            </li>
-                            <li>
-                                <h5>UI/UX Hawk-A-Thon</h5>
-                                <p>Project Manager | March 2025</p>
-                            </li>
-                            <li>
-                                <h5>Hackers League Hackathon</h5>
-                                <p>Developer | November 2024</p>
-                            </li>
-                        </ul>
+                        {experienceList.map((exp, index) => (
+                            <div key={index} className='experience-item'>
+                                <h5>{exp.event}</h5>
+                                <p>{exp.role} | {exp.date}</p>
+                            </div>
+                        ))}
                     </div>
 
                     <div className='certificationsContainer'>
