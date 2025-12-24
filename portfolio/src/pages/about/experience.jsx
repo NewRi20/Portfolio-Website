@@ -35,7 +35,34 @@ function Experience() {
             event: "Hackers League Hackathon",
             date: "November 2024"
         }
-    ];  
+    ];
+    
+    const certificationList = [
+        {
+            title: "Meralco Power Academy: IDOL Hackathon",
+            role: "Participant"
+        },
+        {
+            title: "HarvardX: CS50 SQL",
+            role: "CS50's Introduction to Database with SQL"
+        },
+        {
+            title: "HarvardX: CS50P",
+            role: "CS50's Introduction to Programming with Python"
+        },
+        {
+            title: "HarvardX: CS50x",
+            role: "CS50's Introduction to Computer Science"
+        },
+        {
+            title: "TON Manila Bootcamp",
+            role: "Hackers League Hackathon!"
+        },
+        {   
+            title: "UI/UX Hawk-A-Thon: Designing the Future",
+            role: "Project Manager"
+        }
+    ];
 
     const goToLink = (url) => {
         window.open(url, '_blank');
@@ -83,33 +110,12 @@ function Experience() {
                             <span className="certificateIcon"></span>
                             <h2>Certifications</h2>
                         </div>
-                        <ul>
-                            <li>
-                                <h5>Meralco Power Academy: IDOL Hackathon</h5>
-                                <p>Participant</p>
-                            </li>
-                            <li>
-                                <h5>HarvardX: CS50 SQL</h5>
-                                <p>CS50's Introduction to Database with SQL</p>
-                            </li>
-                            <li>    
-                                <h5>HarvardX: CS50P</h5>
-                                <p>CS50's Introduction to Programming with Python</p>
-                            </li>
-                            <li>
-                                <h5>HarvardX: CS50x</h5>
-                                <p>CS50's Introduction to Computer Science</p>
-                            </li>
-                            <li>
-                                <h5>TON Manila Bootcamp</h5>
-                                <p>Hackers League Hackathon!</p>
-                            </li>
-                            <li>
-                                <h5>UI/UX Hawk-A-Thon: Designing the Future</h5>
-                                <p>Project Manager</p>
-                            </li>
-
-                        </ul>
+                        {certificationList.map((cert, index) => (
+                            <div key={index} className='certification-item'>
+                                <h5>{cert.title}</h5>
+                                <p>{cert.role}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
