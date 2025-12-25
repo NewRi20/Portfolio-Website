@@ -77,7 +77,6 @@ function Experience() {
                     <span className='My'>My </span> <span className='Experience'>Experience</span>
                 </h1>
 
-
                 <div className='experience-details'>
                     <div className='educationContainer'>
                         <div className='header-section'>

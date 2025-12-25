@@ -23,12 +23,11 @@ function ExperiencesSnapshots() {
     const [activeCategory, setActiveCategory] = useState('Certifications');
     const [visibleCount, setVisibleCount] = useState(4); 
 
-
     const imageData = {
         Certifications: [
             { id: 1, src: Ton, alt: 'TON Certificate' },
             { id: 2, src: CS50P, alt: 'CS50P Certificate' },
-            { id: 3, src: CS50x, alt: 'CS50x Certificate' },
+            { id: 3, src: CS50x, alt: 'CS50x Certificate', link: 'https://certificates.cs50.io/fc968c5d-754a-4907-af89-a658e2c4914d.pdf?size=letter' },
             { id: 4, src: Hawkathon, alt: 'Hawkathon Certificate' },
             { id: 5, src: SQL, alt: 'SQL Certificate' },
             { id: 6, src: Meralco, alt: 'Meralco Certificate' },
@@ -83,7 +82,7 @@ function ExperiencesSnapshots() {
                 
                 <div className="image-grid">
                     {currentImages.map((image) => (
-                        <div key={image.id} className="image-card">
+                        <div key={image.id} className="image-card" role='button' onClick={() => image.link && window.open(image.link, '_blank')}>
                             <img src={image.src} alt={image.alt} />
                         </div>
                     ))}
