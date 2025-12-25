@@ -26,11 +26,11 @@ function ExperiencesSnapshots() {
     const imageData = {
         Certifications: [
             { id: 1, src: Ton, alt: 'TON Certificate' },
-            { id: 2, src: CS50P, alt: 'CS50P Certificate' },
+            { id: 2, src: CS50P, alt: 'CS50P Certificate', link: 'https://certificates.cs50.io/5c60a9bf-0b7a-42f6-85f7-2aa0f80d5d16.pdf?size=letter' },
             { id: 3, src: CS50x, alt: 'CS50x Certificate', link: 'https://certificates.cs50.io/fc968c5d-754a-4907-af89-a658e2c4914d.pdf?size=letter' },
-            { id: 4, src: Hawkathon, alt: 'Hawkathon Certificate' },
-            { id: 5, src: SQL, alt: 'SQL Certificate' },
-            { id: 6, src: Meralco, alt: 'Meralco Certificate' },
+            { id: 4, src: Hawkathon, alt: 'Hawkathon Certificate', link: 'https://drive.google.com/file/d/1KbNXjKpRJpdyc-nECcK9W4vBDYZDyCUf/view'},
+            { id: 5, src: SQL, alt: 'SQL Certificate', link: 'https://certificates.cs50.io/5a6b7ccd-f35b-4af5-9316-b139d29ae2ee.pdf?size=letter' },
+            { id: 6, src: Meralco, alt: 'Meralco Certificate', link: '' },
         ],
         Events: [
             { id: 1, src: TonEvent, alt: 'Ton Event' },
