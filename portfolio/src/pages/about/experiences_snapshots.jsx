@@ -23,6 +23,8 @@ function ExperiencesSnapshots() {
     const [activeCategory, setActiveCategory] = useState('Certifications');
     const [visibleCount, setVisibleCount] = useState(4); 
 
+    // Todo: Make all the imageData as modal popups instead of links and make buttons for visiting links
+
     const imageData = {
         Certifications: [
             { id: 1, src: Ton, alt: 'TON Certificate' },
@@ -33,10 +35,10 @@ function ExperiencesSnapshots() {
             { id: 6, src: Meralco, alt: 'Meralco Certificate', link: '' },
         ],
         Events: [
-            { id: 1, src: TonEvent, alt: 'Ton Event' },
-            { id: 2, src: HawkathonEvent, alt: 'Hawkathon Event' },
-            { id: 3, src: MeralcoHackathon, alt: 'Meralco Hackathon' },
-            { id: 4, src: Boltez5, alt: 'Team Boltez5' },
+            { id: 1, src: TonEvent, alt: 'Ton Event', desc: "" },
+            { id: 2, src: HawkathonEvent, alt: 'Hawkathon Event', desc: "" },
+            { id: 3, src: MeralcoHackathon, alt: 'Meralco Hackathon', desc: "" },
+            { id: 4, src: Boltez5, alt: 'Team Boltez5', desc: "" },
         ],
         Presentation: [
             // none
