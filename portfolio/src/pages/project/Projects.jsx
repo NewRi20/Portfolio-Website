@@ -27,9 +27,7 @@ function Projects() {
     };
 
     function handleProjectModal(project) {
-        console.log(project);
         setSelectedProject(project);
-        console.log(selectedProject);
         setProjectModal(true);
     }
 

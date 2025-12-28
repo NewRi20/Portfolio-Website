@@ -21,9 +21,10 @@ import Boltez5 from './Events_assets/TeamBoltez5.jpg';
 
 function ExperiencesSnapshots() { 
     const [activeCategory, setActiveCategory] = useState('Certifications');
-    const [visibleCount, setVisibleCount] = useState(4); 
+    const [visibleCount, setVisibleCount] = useState(4);
+    const [imgDataModal, setImgDataModal] = useState(false);
+    const [selectedSnapShot, setSelectedSnapShot] = useState({});    
 
-    // Todo: Make all the imageData as modal popups instead of links and make buttons for visiting links
 
     const imageData = {
         Certifications: [
@@ -44,6 +45,28 @@ function ExperiencesSnapshots() {
             // none
         ]
     };
+
+    // Todo: Make all the imageData as modal popups instead of links and make buttons for visiting links
+    // ToDo: Make description for event snapshots
+    // ToDo: Practice Tailwind CSS for this section
+
+    function handleOpenModal(snapshot) {
+        setSelectedSnapShot(snapshot);
+        setImgDataModal(true);
+    };
+
+    
+    const handleCloseModal = () => {
+        setImgDataModal(false);
+        setSelectedSnapShot(null);
+    };
+
+    function goToLink(url) {
+        if (url != null) {
+            window.open(url, '_blank');
+        }
+    };
+
 
     const handleCategoryClick = (category) => {
         setActiveCategory(category);
@@ -84,7 +107,7 @@ function ExperiencesSnapshots() {
                 
                 <div className="image-grid">
                     {currentImages.map((image) => (
-                        <div key={image.id} className="image-card" role='button' onClick={() => image.link && window.open(image.link, '_blank')}>
+                        <div key={image.id} className="image-card" role='button' onClick={() => handleOpenModal(image)}>
                             <img src={image.src} alt={image.alt} />
                         </div>
                     ))}
@@ -94,6 +117,19 @@ function ExperiencesSnapshots() {
                     <button className="view-more-button" onClick={handleViewMore}>
                         View More
                     </button>
+                )}
+
+                {imgDataModal && (
+                    <div className="project-modal" onClick={handleCloseModal}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <span className="close-button" onClick={handleCloseModal}>&times;</span>
+                            <img src={selectedSnapShot.src} alt="Snapshot Preview" className="modal-image" />
+                            <p className="modal-description">{selectedSnapShot.desc}</p>
+                            {selectedSnapShot.link && (
+                                <button className="modal-button" onClick={() => goToLink(selectedSnapShot.link)}>Visit</button>
+                            )}
+                        </div>
+                    </div>
                 )}
             </div>
         </>
