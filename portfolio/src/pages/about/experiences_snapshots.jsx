@@ -36,10 +36,38 @@ function ExperiencesSnapshots() {
             { id: 6, src: Meralco, alt: 'Meralco Certificate', link: '' },
         ],
         Events: [
-            { id: 1, src: TonEvent, alt: 'Ton Event', desc: "" },
-            { id: 2, src: HawkathonEvent, alt: 'Hawkathon Event', desc: "" },
-            { id: 3, src: MeralcoHackathon, alt: 'Meralco Hackathon', desc: "" },
-            { id: 4, src: Boltez5, alt: 'Team Boltez5', desc: "" },
+            { 
+                id: 1, 
+                src: TonEvent, 
+                alt: 'Ton Event', 
+                desc: `TON Manila Bootcamp Hackers League Hackathon
+                    - Working as a three-person team to create Flap It! This is a play-to-earn game with gacha and airdrop features that runs on the TON Network, a blockchain network used by the Telegram Mini App.
+                    - Utilized HTML, CSS, JS, and the Telegram SDK. 
+                    - Learned some of the important mindset that a student like me must have in order to enter the industry.
+                    - Enhanced skills in web application development, teamwork, and problem-solving within a 72-hour time period.` 
+            },
+            { 
+                id: 2, 
+                src: HawkathonEvent, 
+                alt: 'Hawkathon Event', 
+                desc: `` 
+            },
+            { 
+                id: 3, 
+                src: MeralcoHackathon, 
+                alt: 'Meralco Hackathon', 
+                desc: `Meralco IDOL Hackathon 2025
+                    - Project Voltizen: Developed an AI-powered energy audit and social mapping platform with a five-person team during this 24-hour hackathon.
+                    - Full-Stack Integration: Connected a React.js frontend with a Python Flask and YOLOv8 backend to enable image-based appliance detection, backed by Firebase for real-time data.
+                    - Core Feature: Built a real-time social map using Firebase listeners (onSnapshot) to share live consumption estimates between users while enforcing privacy settings.
+                    - Technologies Used: Integrated React, Firebase (Auth/Firestore), Python/Flask, and YOLOv8, managed geospatial data, and deployed the final build on Vercel.` 
+            },
+            { 
+                id: 4, 
+                src: Boltez5, 
+                alt: 'Team Boltez5', 
+                desc: `` 
+            },
         ],
         Presentation: [
             // none
