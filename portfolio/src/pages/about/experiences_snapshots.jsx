@@ -66,7 +66,11 @@ function ExperiencesSnapshots() {
                 id: 4, 
                 src: Boltez5, 
                 alt: 'Team Boltez5', 
-                desc: `` 
+                desc: `Meralco IDOL Hackathon 2025
+                    - Project Voltizen: Developed an AI-powered energy audit and social mapping platform with a five-person team during this 24-hour hackathon.
+                    - Full-Stack Integration: Connected a React.js frontend with a Python Flask and YOLOv8 backend to enable image-based appliance detection, backed by Firebase for real-time data.
+                    - Core Feature: Built a real-time social map using Firebase listeners (onSnapshot) to share live consumption estimates between users while enforcing privacy settings.
+                    - Technologies Used: Integrated React, Firebase (Auth/Firestore), Python/Flask, and YOLOv8, managed geospatial data, and deployed the final build on Vercel.` 
             },
         ],
         Presentation: [
@@ -74,8 +78,7 @@ function ExperiencesSnapshots() {
         ]
     };
 
-    // Todo: Make all the imageData as modal popups instead of links and make buttons for visiting links
-    // ToDo: Make description for event snapshots
+    // ToDo: Make description for event snapshots -> Specifically the Hawkathon
     // ToDo: Practice Tailwind CSS for this section
 
     function handleOpenModal(snapshot) {
