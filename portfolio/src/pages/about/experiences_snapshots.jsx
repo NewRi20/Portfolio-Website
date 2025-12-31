@@ -50,7 +50,11 @@ function ExperiencesSnapshots() {
                 id: 2, 
                 src: HawkathonEvent, 
                 alt: 'Hawkathon Event', 
-                desc: `` 
+                desc: `Strategic Leadership: Served as Project Manager, orchestrating the end-to-end design workflow from initial ideation to the delivery of a high-fidelity prototype within a high-pressure sprint.
+                    Figma Mastery: Developed advanced proficiency in Figma, utilizing collaborative design tools, component libraries, and interactive prototyping to visualize complex user journeys.
+                    User-Centric Design: Applied core UI/UX principles to create intuitive, accessible, and aesthetically engaging interfaces focused on solving real-world user pain points.
+                    Agile Management: Directed team efforts using agile methodologies, ensuring all project milestones were met and resources were optimized under strict competition deadlines.
+                    Cross-Functional Synergy: Bridged the gap between creative vision and technical execution, fostering a collaborative environment to ensure a cohesive and functional final product.` 
             },
             { 
                 id: 3, 
@@ -78,7 +82,7 @@ function ExperiencesSnapshots() {
         ]
     };
 
-    // ToDo: Make description for event snapshots -> Specifically the Hawkathon
+    // ToDo: Make descriptions in bullet centered format
     // ToDo: Practice Tailwind CSS for this section
 
     function handleOpenModal(snapshot) {
