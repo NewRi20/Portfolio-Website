@@ -90,7 +90,6 @@ function ExperiencesSnapshots() {
         ]
     };
 
-    // ToDo: Make descriptions in bullet centered format
     // ToDo: Practice Tailwind CSS for this section
 
     function handleOpenModal(snapshot) {

@@ -87,13 +87,11 @@
     margin-bottom: 20px;
     font-family: 'Instrument sans', sans-serif;
     line-height: 1.5;
-    max-width: 1100px; /* allow wider cards */
+    max-width: 1100px; 
     font-size: 18px;
     gap: 50px;
     margin: 20px;
-    flex-wrap: wrap; /* wrap on smaller screens */
-    justify-content: center; /* keep nicely centered */
-
+    flex-wrap: wrap; 
 }
 
 .experience-container h1{
@@ -117,30 +115,29 @@
   border-radius: 30px;
   box-shadow: -5px -5px 3px var(--color-primary);
   padding: 20px 50px;
-  /* wider, responsive card sizing */
-  flex: 1 1 360px; /* preferred width ~360px, can shrink/grow */
-  min-width: 320px; /* don't get too narrow */
+  flex: 1 1 360px; 
+  min-width: 320px; 
 }
 
-/* remove bullets and tighten spacing inside lists */
+
 .experience-details ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-.experience-details li + li {
-  margin-top: 12px;
-}
 
-
-.education-item{
+.education-item,
+.experience-item,
+.certification-item {
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
 }
 
-.education-item:hover{
+.education-item:hover,
+.experience-item:hover,
+.certification-item:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
     background-color: var(--color-accent);

@@ -68,7 +68,7 @@ function Experience() {
         window.open(url, '_blank');
     }
 
-
+    // ToDo: Add redirection method in certs to snapshots certs page
     
     return(
         <>
