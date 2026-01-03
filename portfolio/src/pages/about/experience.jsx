@@ -16,14 +16,14 @@ function Experience() {
 
     const experienceList = [
         {
-            role: "Participant",
-            event: "Meralco Power Academy: IDOL Hackathon",
-            date: "November 2025"
-        },
-        {
             role: "Frontend Development Lead",
             event: "Google Developer Groups on Campus",
             date: "September 2025 - Present"
+        },
+        {
+            role: "Participant",
+            event: "Meralco Power Academy: IDOL Hackathon",
+            date: "November 2025"
         },
         {
             role: "Project Manager",
