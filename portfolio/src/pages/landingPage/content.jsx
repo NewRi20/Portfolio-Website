@@ -33,7 +33,11 @@ function Content() {
                     <img src={meImage} alt='IrwenFronda' className='w-[400px] h-[400px] object-cover object-center rounded-full border-[5px] border-[var(--color-primary)] shadow-[0_4px_10px_rgba(0,0,0,0.2)] max-lg:w-[320px] max-lg:h-[320px] max-md:w-[280px] max-md:h-[280px] max-md:border-4 max-sm:w-[220px] max-sm:h-[220px] max-sm:border-[3px]' />
                 </div>
            </div>
-           <button onClick={handleAboutClick} className='mx-auto mb-[30px] py-3 px-[35px] bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-[25px] cursor-pointer text-base font-semibold transition-all duration-300 ease-in-out block w-fit hover:bg-[var(--color-primary)] hover:text-[var(--color-white)] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]'>
+           <button onClick={handleAboutClick} className='
+                mx-auto mb-[30px] py-3 px-9 bg-transparent border-2 border-[var(--color-primary)] 
+                text-[var(--color-primary)] rounded-[25px] cursor-pointer text-base font-semibold 
+                transition-all duration-300 ease-in-out block w-fit hover:bg-[var(--color-primary)] 
+                hover:text-[var(--color-white)] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]'>
                 About Me
            </button>
         
