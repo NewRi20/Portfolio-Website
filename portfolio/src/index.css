@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  /* Color Palette */
+@theme {
+  /* 1. Register your custom colors so you can use 'bg-primary' or 'text-secondary' */
   --color-primary: hsl(132, 18%, 33%);
   --color-secondary: hsl(114, 16%, 60%);
   --color-accent: hsl(91, 23%, 75%);
@@ -9,15 +9,13 @@
   --color-black: hsl(0, 0%, 8%);
   --color-dark: hsl(0, 0%, 16%);
   --color-gray: hsl(0, 0%, 32%);
+
+  /* 2. Set 'Instrument Sans' as the default sans font */
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui;
 }
 
-* {
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Instrument Sans', sans-serif;
+@layer base {
+  body {
+    @apply font-sans;
+  }
 }
-
-body {
-  padding-top: 80px; /* Space for fixed header */
-}
-
