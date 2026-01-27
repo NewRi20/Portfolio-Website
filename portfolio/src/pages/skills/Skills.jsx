@@ -10,8 +10,13 @@ function Skills() {
     { icon: 'javaIcon', title: 'Java', desc: 'Object-oriented language' },
     { icon: 'htmlIcon', title: 'HTML', desc: 'Markup for web pages' },
     { icon: 'cssIcon', title: 'CSS', desc: 'Styling for the web' },
+    { icon: 'tailwindIcon', title: 'Tailwind', desc: 'CSS framework' },
+    { icon: 'nativewindIcon', title: 'NativeWind', desc: 'Tailwind for React Native' },
     { icon: 'javascriptIcon', title: 'JavaScript', desc: 'Language for the web' },
     { icon: 'reactIcon', title: 'React', desc: 'UI library' },
+    { icon: 'reactNativeIcon', title: 'React Native', desc: 'Mobile app framework' },
+    { icon: 'expoIcon', title: 'Expo', desc: "React Native's Open-source Framework" },
+    { icon: 'typescriptIcon', title: 'TypeScript', desc: 'JavaScript with types' },
     { icon: 'figmaIcon', title: 'Figma', desc: 'UI/UX design tool' },
   ];
 
