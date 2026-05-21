@@ -16,6 +16,16 @@ function Experience() {
 
     const experienceList = [
         {
+            role: "Team Leader | Full-Stack Developer",
+            event: "InnOlympics 2026: To Let Filipinos Dream Without Compromise",
+            date: "April 2026"
+        },
+        {
+            role: "Team Leader | Full-Stack Developer",
+            event: "START's Start-A-Thon: Data & AI Innovation Challenge",
+            date: "April 2026"
+        },
+        {
             role: "Frontend Development Lead",
             event: "Google Developer Groups on Campus",
             date: "September 2025 - Present"
@@ -38,6 +48,10 @@ function Experience() {
     ];
     
     const certificationList = [
+        {
+            title: "InnOlympics 2026: To Let Filipinos Dream Without Compromise",
+            role: "Team Leader | Full-Stack Developer",
+        },
         {
             title: "Meralco Power Academy: IDOL Hackathon",
             role: "Participant"

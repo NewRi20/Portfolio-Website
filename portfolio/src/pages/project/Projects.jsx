@@ -12,6 +12,7 @@ function Projects() {
     const [projectModal, setProjectModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState({});
 
+    //ToDo: Update this list
     const projects = [
         { id: 1, src: ERS, desc: 'Modernization and Security Enhancement of the Technological University of the Philippines Enrollment and Registration System (TUP-ERS) Website', link: 'https://tup-ers-enhancement.vercel.app/' },
         { id: 2, src: GDG, desc: 'Google Developer Groups on Campus - TUP Manila Landing Page', link: 'https://gdgoctupm.com/'},
