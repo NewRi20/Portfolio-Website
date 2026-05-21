@@ -9,6 +9,12 @@ function Header() {
       const sections = ['about', 'skills', 'projects', 'contacts'];
       const scrollPosition = window.scrollY + 150; // offset for header
 
+      // Bottom of page edge case — activate last section
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+        setActiveSection('contacts');
+        return;
+      }
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
